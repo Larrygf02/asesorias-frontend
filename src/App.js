@@ -14,9 +14,10 @@ require('materialize-js')
 
 class App extends Component {
 	render() {
+		/*ROUTE.URL_PATH*/ 
 		return (
 			<div>
-				<Router basename={ROUTE.URL_PATH}>
+				<Router basename={process.env.PUBLIC_URL}>
 					<div>
 						<Route exact path="/" render={() => (<Redirect to={ROUTE.URL_LANDING} />)} ></Route>
 						<Route exact path={ROUTE.URL_LANDING} component={Landing} ></Route>
