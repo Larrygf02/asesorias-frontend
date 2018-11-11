@@ -2,6 +2,7 @@
   "name": "asesorias-frontend",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://larrygf02.github.io/asesorias-frontend/",
   "dependencies": {
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
