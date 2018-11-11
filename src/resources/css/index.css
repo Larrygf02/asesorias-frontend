@@ -1,0 +1,127 @@
+.headerLanding{
+    position: fixed;
+    width:100%;
+    z-index: 999;
+}
+
+.LogoHeader{
+    width: 170px;
+    margin: 5px 0px 0px 20px;
+}
+
+.listaHeader{
+    width:70%;
+}
+
+.sectionHome{
+    padding-top:64px;
+}
+
+.imgBannerHome{
+    width: 100%;
+    border-radius: 0px 0px 20px 20px;
+    border: 1px solid #ccc;
+}
+
+.imgBannerSomos{
+    width:50%;
+    margin-left:25%;
+}
+
+.titleSomos{
+    font-family: 'Lato-Bold';
+    font-size:40px;
+    text-align: center;
+    margin-bottom: 10px;
+    color:#4a4a4a;
+}
+
+.detailSomos{
+    text-align: center;
+    padding: 0px 20%;
+    font-family: 'Lato-Regular';
+    font-size: 15px;
+    color: #9a9292;
+    margin: 0px 0px 15px 0px;
+}
+
+.sectionBannerSomos{
+    margin:80px 0px;
+}
+
+.sectionBannerFunciona{
+    margin: 80px 0px;
+    text-align:center
+}
+
+.btn,.btn:hover, .btn:focus{
+    background:#72d285;
+    width:250px;
+}
+
+.positionInlineBlock{
+    display:inline-block;
+}
+
+footer{
+    padding: 20px 10%;
+    margin: 0 auto;
+    color: #686f7a;
+    font-family: 'Lato-Regular';
+    border-top: 1px solid #ccc; 
+    border-bottom: 10px solid #f38a8a;
+}
+
+footer img {
+    width: 100px;
+    margin: 0 10px;
+}
+
+footer p {
+    vertical-align: text-bottom;
+}
+
+footer ul li{
+    display: inline-block;
+    margin: 0 5px;
+    text-decoration: underline;
+    color: #007791;
+    font-size:14px; 
+}
+
+.sectionRegistro{
+    width: 50%;
+    margin: 0 auto;
+    padding-top:80px;
+}
+
+.btnHeaderSecond{
+    margin-right: 100px;
+}
+
+.btnregistro{
+    text-align:center;
+}
+
+.btnregistro a, .btnregistro a:hover, .btnregistro a:focus{
+    background:#da2b2b;
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 992px){
+    .LogoHeader{
+        width: 100px;
+    }
+
+    .sectionRegistro{
+        width: 90%;
+    }
+
+    .btnregistro a{
+        width:100%;
+    }
+
+    .titleSomos{
+        font-size: 22px;
+    }
+}
