@@ -3,7 +3,7 @@ import Banner from '../../resources/img/banner.png'
 
 const Home = ({handlerScroll}) => (
     <section className="sectionHome">
-        <img className="imgBannerHome" src={Banner} />
+        <img className="imgBannerHome" src={Banner} alt={Banner} />
     </section>
 )
 
