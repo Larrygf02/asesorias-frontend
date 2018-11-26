@@ -4,8 +4,8 @@ import { Element, scroller } from 'react-scroll';
 import Footer from '../components/commons/Footer';
 //import HeaderSeconds from '../components/commons/HeaderSeconds';
 import { ROUTE } from '../resources/js/Constantes.js'
-import { DB }  from '../util/Constantes.js';
-import { task_query } from '../util/QueryRegistro.js';
+//import { DB }  from '../util/Constantes.js';
+//import { task_query } from '../util/QueryRegistro.js';
 
 class RegistroCliente extends Component {
     state = {
@@ -21,13 +21,15 @@ class RegistroCliente extends Component {
         //this.props.history.push({pathname : ROUTE.URL_LANDING});
         console.log(e)
         const {nombre, correo, password } = this.state
+        fetch(`http://localhost:4000/usuario/add?nombre=${nombre}&correo=${correo}&password=${password}`)
+            .then(response => console.log(response))
+            .catch(err => console.err(err))
     }
     handlerLanding = () => {
         this.props.history.push({pathname : ROUTE.URL_LANDING});
     }
 
     componentDidMount(){
-        
         scroller.scrollTo('registro', {
 			duration: 800,
 			delay: 0,
