@@ -2,6 +2,8 @@ import React from 'react'
 import Logo from '../../resources/img/logo.png'
 
 const HeaderSeconds = ({handlerLanding}) => (
+
+   
     <header className="headerLanding">
        <nav>
             <div className="nav-wrapper">

@@ -10,6 +10,7 @@ import RegistroAlumno from './containers/RegistroCliente'
 import RegistroProfesor from './containers/RegistroProfesor'
 import LoginAlumno from './containers/LogeoCliente'
 import LoginProfesor from './containers/LogeoProfesor'
+import HomeAlumno from './containers/HomeAlumno'
 import { ROUTE } from './resources/js/Constantes.js'
 
 require('materialize-js')
@@ -28,6 +29,7 @@ class App extends Component {
 						<Route exact path={ROUTE.URL_REGISTRO_PROFESOR} component={RegistroProfesor} ></Route>
 						<Route exact path={ROUTE.URL_LOGIN_ALUMNO} component={LoginAlumno} ></Route>
 						<Route exact path={ROUTE.URL_LOGIN_PROFESOR} component={LoginProfesor} ></Route>
+						<Route exact path={ROUTE.URL_HOME_ALUMNO} component={HomeAlumno} ></Route>
 					</div>
 				</Router>
 			</div>

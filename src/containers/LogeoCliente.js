@@ -12,8 +12,8 @@ class RegistroCliente extends Component {
         password        :   '',
     }
 
-     handlerLanding = () => {
-		this.props.history.push({pathname : ROUTE.URL_LANDING});
+     handlerHomeAlumno = () => {
+		this.props.history.push({pathname : ROUTE.URL_HOME_ALUMNO});
 	}
 
     componentDidMount(){
@@ -48,7 +48,7 @@ class RegistroCliente extends Component {
                         </div>
 
                         <div className="btnregistro">
-                            <a className="btn waves-effect waves-light" >Entrar</a>
+                            <a className="btn waves-effect waves-light" onClick={this.handlerHomeAlumno} >Entrar</a>
                         </div>
                         </form>
                     </div>

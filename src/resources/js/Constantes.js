@@ -5,4 +5,5 @@ export const ROUTE = {
 	URL_REGISTRO_PROFESOR: '/registroProfesor',
 	URL_LOGIN_ALUMNO: '/loginAlumno',
 	URL_LOGIN_PROFESOR: '/loginProfesor',
+	URL_HOME_ALUMNO: '/homeAlumno'
 }
