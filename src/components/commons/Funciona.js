@@ -8,7 +8,7 @@ const Funciona = ({handlerCotizador,handlerScroll}) => (
         <img src={comofunciona} alt={comofunciona}/>
 
         <div>
-            <a className="btn waves-effect waves-light" onClick={handlerCotizador}  >Registrate</a>
+            {/* <a className="btn waves-effect waves-light" onClick={handlerCotizador}  >Registrate</a> */}
         </div>
     </section>
 )

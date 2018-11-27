@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from '../../resources/img/logo.png'
+import { ROUTE } from '../../resources/js/Constantes.js'
 
 const Header = ({handlerCotizador,handlerScroll}) => (
     <header className="headerLanding">
@@ -13,8 +14,30 @@ const Header = ({handlerCotizador,handlerScroll}) => (
                     <li><a onClick={()=> handlerScroll('home') }>Conocenos</a></li>
                     <li><a onClick={()=> handlerScroll('somos') }>Quienes Somos</a></li>
                     <li><a onClick={()=> handlerScroll('funciona') }>Como Funciona</a></li>
-                    <li><a className="btn waves-effect waves-light" onClick={handlerCotizador} >Registrate</a></li>
                 </ul>
+            </div>
+        </nav>
+        {/* <nav className="nav-wrapperTitle">
+            <div className="nav-wrapper">
+                <h3>Registrate</h3>
+            </div>
+        </nav> */}
+        <nav className="nav-wrapperOptions">
+            <div className="nav-wrapper items">
+                <p onClick={()=> handlerCotizador(ROUTE.URL_REGISTRO_PROFESOR)}>Registro de Profesores</p>
+                <p onClick={()=> handlerCotizador(ROUTE.URL_REGISTRO_ALUMNO)}>Registro de Alumnos</p>
+            </div>
+        </nav>
+
+        {/* <nav className="nav-wrapperTitle">
+            <div className="nav-wrapper">
+                <h3>Iniciar Sesión</h3>
+            </div>
+        </nav> */}
+        <nav className="nav-wrapperOptions">
+            <div className="nav-wrapper items">
+                <p onClick={()=> handlerCotizador(ROUTE.URL_LOGIN_PROFESOR)}>Inicia Profesores</p>
+                <p onClick={()=> handlerCotizador(ROUTE.URL_LOGIN_ALUMNO)}>Inicia Alumnos</p>
             </div>
         </nav>
 
@@ -22,7 +45,6 @@ const Header = ({handlerCotizador,handlerScroll}) => (
             <li><a onClick={()=> handlerScroll('home') }>Conocenos</a></li>
             <li><a onClick={()=> handlerScroll('somos') }>Quienes Somos</a></li>
             <li><a onClick={()=> handlerScroll('funciona') }>Como Funciona</a></li>
-            <li><a className="btn waves-effect waves-light" onClick={handlerCotizador}  >Registrate</a></li>
         </ul>        
     </header>
 )

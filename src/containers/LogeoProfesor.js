@@ -30,24 +30,15 @@ class RegistroCliente extends Component {
             <Element name="registro">
                 <HeaderSeconds handlerLanding={this.handlerLanding} />
                 <section className="sectionRegistro">
-                    <h1 className="titleSomos">Registrate con nosotros y aprende</h1>
+                    <p>¡Unete y enseña con nosotros!</p>
+                    <h1 className="titleSomos">Iniciar Sesión</h1>
                     <div className="row">
                         <form className="col s12">
                         <div className="row">
                             <div className="input-field col s12">
                                 <i className="material-icons prefix">account_circle</i>
                                 <input id="icon_prefix" type="text" className="validate" />
-                                <label htmlFor="icon_prefix">Nombre Completo</label>
-                            </div>
-                            <div className="input-field col s12">
-                                <i className="material-icons prefix">phone</i>
-                                <input id="icon_telephone" type="tel" className="validate" />
-                                <label htmlFor="icon_telephone">Telefono</label>
-                            </div>
-                            <div className="input-field col s12">
-                                <i className="material-icons prefix">email</i>
-                                <input id="email" type="email" className="validate" />   
-                                <label htmlFor="email">Correo</label>
+                                <label htmlFor="icon_prefix">Usuario</label>
                             </div>
                              <div className="input-field col s12">
                                 <i className="material-icons prefix">vpn_key</i>
@@ -57,7 +48,7 @@ class RegistroCliente extends Component {
                         </div>
 
                         <div className="btnregistro">
-                            <a className="btn waves-effect waves-light" >Regristrarse</a>
+                            <a className="btn waves-effect waves-light" >Entrar</a>
                         </div>
                         </form>
                     </div>

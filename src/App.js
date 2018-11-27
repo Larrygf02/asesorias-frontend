@@ -6,7 +6,10 @@ import './resources/css/fonts.css';
 import './resources/css/index.css';
 //import configureStore from './store/configureStore';
 import Landing from './containers/Landing'
-import Registro from './containers/RegistroCliente'
+import RegistroAlumno from './containers/RegistroCliente'
+import RegistroProfesor from './containers/RegistroProfesor'
+import LoginAlumno from './containers/LogeoCliente'
+import LoginProfesor from './containers/LogeoProfesor'
 import { ROUTE } from './resources/js/Constantes.js'
 
 require('materialize-js')
@@ -17,11 +20,14 @@ class App extends Component {
 		/*ROUTE.URL_PATH*/ 
 		return (
 			<div>
-				<Router basename={process.env.PUBLIC_URL}>
+				<Router basename={ROUTE.URL_PATH}>
 					<div>
 						<Route exact path="/" render={() => (<Redirect to={ROUTE.URL_LANDING} />)} ></Route>
 						<Route exact path={ROUTE.URL_LANDING} component={Landing} ></Route>
-						<Route exact path={ROUTE.URL_REGISTRO} component={Registro} ></Route>
+						<Route exact path={ROUTE.URL_REGISTRO_ALUMNO} component={RegistroAlumno} ></Route>
+						<Route exact path={ROUTE.URL_REGISTRO_PROFESOR} component={RegistroProfesor} ></Route>
+						<Route exact path={ROUTE.URL_LOGIN_ALUMNO} component={LoginAlumno} ></Route>
+						<Route exact path={ROUTE.URL_LOGIN_PROFESOR} component={LoginProfesor} ></Route>
 					</div>
 				</Router>
 			</div>

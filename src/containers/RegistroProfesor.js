@@ -30,7 +30,7 @@ class RegistroCliente extends Component {
             <Element name="registro">
                 <HeaderSeconds handlerLanding={this.handlerLanding} />
                 <section className="sectionRegistro">
-                    <h1 className="titleSomos">Registrate con nosotros y aprende</h1>
+                    <h1 className="titleSomos">Registrate con nosotros y enseña</h1>
                     <div className="row">
                         <form className="col s12">
                         <div className="row">

@@ -18,8 +18,8 @@ class Landing extends Component {
 		this.handlerScroll('header')
 	}
 
-    handlerCotizador = () => {
-		this.props.history.push({pathname : ROUTE.URL_REGISTRO});
+    handlerCotizador = (URL) => {
+		this.props.history.push({pathname : URL});
 	}
 
     handlerScroll = (element) => {
