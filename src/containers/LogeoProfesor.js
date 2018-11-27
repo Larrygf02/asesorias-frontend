@@ -11,7 +11,24 @@ class RegistroCliente extends Component {
         correo          :   '',
         password        :   '',
     }
+    handlerSubmit = (e) => {
+        const { correo, password } = this.state
+        fetch(`http://localhost:4000/profesor/login?correo=${correo}&password=${password}`)
+            .then(response => response.json())
+            .then(json => {
+                const { data } = json
+                if (data.length > 0){
+                    console.log('logeado')
+                }else{
+                    console.log('No se pudo loguear')
+                }
+            })
+            .catch(err => console.err(err)) 
+    }
 
+    logChange = (e) => {
+        this.setState({[e.target.name] : e.target.value})
+    }
      handlerLanding = () => {
 		this.props.history.push({pathname : ROUTE.URL_LANDING});
 	}
@@ -37,18 +54,18 @@ class RegistroCliente extends Component {
                         <div className="row">
                             <div className="input-field col s12">
                                 <i className="material-icons prefix">account_circle</i>
-                                <input id="icon_prefix" type="text" className="validate" />
-                                <label htmlFor="icon_prefix">Usuario</label>
+                                <input id="icon_prefix" type="text" onChange={this.logChange} className="validate" name="correo"/>
+                                <label htmlFor="icon_prefix">Correo</label>
                             </div>
                              <div className="input-field col s12">
                                 <i className="material-icons prefix">vpn_key</i>
-                                <input id="password" type="password" className="validate" />
+                                <input id="password" type="password" onChange={this.logChange} className="validate" name="password"/>
                                 <label htmlFor="password">Contraseña</label>
                             </div>
                         </div>
 
                         <div className="btnregistro">
-                            <a className="btn waves-effect waves-light" >Entrar</a>
+                            <a className="btn waves-effect waves-light" onClick={this.handlerSubmit}>Entrar</a>
                         </div>
                         </form>
                     </div>
