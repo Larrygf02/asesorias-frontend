@@ -1,7 +1,7 @@
 .headerLanding{
     position: fixed;
     width:100%;
-    z-index: 999;
+    z-index: 99999999999999999;
 }
 
 .LogoHeader{
@@ -68,6 +68,12 @@
 
 .positionInlineBlock{
     display:inline-block;
+}
+
+div .itemResultado p{
+    display: inline-block;
+    width: 50%;
+    text-align: center;
 }
 
 footer{
@@ -174,6 +180,50 @@ footer ul li{
 .nav-wrapperOptions .items p:nth-child(1){
     border-right: 1px solid #f3dcdc;
 }
+
+.homeCliente{
+    width: 90% !important;
+    padding-top: 10px !important;
+}
+
+.bxHomeCliente{
+    background: #7b99d2 !important;
+    border: 0px;
+}
+
+.boxHomeCliente div p:hover{
+    background: #497ddd !important;
+    border: 0px;
+}
+
+.margenes{
+    height: 10px;
+}
+
+.titleHome{
+    font-size: 25px;
+    font-family: 'Lato-Regular';
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 100px;
+    
+}
+
+.itemResultado{
+    border: 0.5px solid #686f7a;
+    padding: 0px;
+    margin: 0px;
+}
+
+.itemResultado>.boxItemResult{
+    padding: 0px;
+    margin: 0px;
+}
+
+.itemResultado>.boxItemResult:hover{
+    background: rgb(224, 201, 201) !important;
+}
+
 
 @media only screen and (max-width: 992px){
     .LogoHeader{

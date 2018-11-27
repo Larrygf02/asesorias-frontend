@@ -9,6 +9,8 @@ import Somos from '../components/commons/Somos'
 import Footer from '../components/commons/Footer'
 import Funciona from '../components/commons/Funciona'
 import { ROUTE } from '../resources/js/Constantes.js'
+
+
 class Landing extends Component {
 	state = {
 		

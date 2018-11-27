@@ -12,9 +12,9 @@ class RegistroCliente extends Component {
         password        :   '',
     }
 
-     handlerLanding = () => {
-		this.props.history.push({pathname : ROUTE.URL_LANDING});
-	}
+    /* handlerHomeAlumno = () => {
+		this.props.history.push({pathname : ROUTE.URL_HOME_ALUMNO});
+	}*/
 
     componentDidMount(){
         scroller.scrollTo('registro', {
@@ -32,6 +32,7 @@ class RegistroCliente extends Component {
                 const { data } = json
                 if (data.length > 0){
                     console.log('logeado')
+                    this.props.history.push({pathname : ROUTE.URL_HOME_ALUMNO});
                 }else{
                     console.log('No se pudo loguear')
                 }
@@ -66,7 +67,7 @@ class RegistroCliente extends Component {
                         </div>
 
                         <div className="btnregistro">
-                            <a className="btn waves-effect waves-light" onClick={this.handlerSubmit}>Entrar</a>
+                        <a className="btn waves-effect waves-light" onClick={this.handlerSubmit}>Entrar</a>
                         </div>
                         </form>
                     </div>
